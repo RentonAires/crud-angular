@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "caneta",
+      "price": 5.9
+    },
+    {
+      "id": 2,
+      "name": "carro",
+      "price": 55.19
+    },
+    {
+      "id": 3,
+      "name": "geladeira",
+      "price": 15.9
+    },
+    {
+      "name": "carro",
+      "price": "55,999",
+      "id": 4
+    }
+  ]
+}
