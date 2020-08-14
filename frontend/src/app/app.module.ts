@@ -18,10 +18,12 @@ import { HomeComponent } from './views/home/home.component';
 import { MatCardModule } from '@angular/material/card';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
-import { RedDirective } from './directives/red.directive';
-import { ForDirective } from './directives/for.directive';
+import { RedDirective } from './directives/red.directive'; //diretiva de atributo
+import { ForDirective } from './directives/for.directive'; //diretiva de estrutura
 
 import { MatButtonModule } from '@angular/material/button';
+
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
