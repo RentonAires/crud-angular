@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from './../product.service'; //improtando o serviço 
 
 import { Router } from '@angular/router'; //importando rota
+import { Product } from '../product.model';
 
 
 @Component({
@@ -12,14 +13,23 @@ import { Router } from '@angular/router'; //importando rota
 })
 export class ProductCreateComponent implements OnInit {
 
+  product: Product = {
+    name:'test produtionn',
+    price: 130.60
+  }
+
   constructor(private productService: ProductService, private router: Router) { } //injetando um serviço
 
   ngOnInit(): void {
 
   }
-
+  //metodo que vai criar o produto 27/08/2020
   createProduct(): void {
-    this.productService.showMessage('produto criado') // metodo para criar produtos
+    this.productService.create(this.product).subscribe(() => {
+      this.productService.showMessage('Produto Criado...') // messagem criaçao de produtos 27/08/2020
+      this.router.navigate(['/products'])
+    })
+    
   }
 
   cancel(): void {
