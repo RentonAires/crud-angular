@@ -1,0 +1,27 @@
+<div class="mat-elevation-z8">
+  <table mat-table class="full-width-table" matSort aria-label="Elements">
+    <!-- Id Column -->
+    <!--tamplete das colunas-->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+      <td mat-cell *matCellDef="let row">{{row.id}}</td>
+    </ng-container>
+    
+    <!--tenplate do tabela-->
+    <!-- Name Column -->
+    <ng-container matColumnDef="name"><!--container agrupador de elementos-->
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th><!--definindo cabeçalho-->
+      <td mat-cell *matCellDef="let row">{{row.name}}</td><!--definido o conteudo das linhas-->
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator #paginator
+      [length]="dataSource?.data.length"
+      [pageIndex]="0"
+      [pageSize]="10"
+      [pageSizeOptions]="[25, 50, 100, 250]">
+  </mat-paginator>
+</div>

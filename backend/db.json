@@ -17,8 +17,33 @@
     },
     {
       "name": "carro",
-      "price": "55,999",
+      "price": "55.99",
       "id": 4
+    },
+    {
+      "name": "joao",
+      "price": "12555",
+      "id": 5
+    },
+    {
+      "name": "renato",
+      "price": "300",
+      "id": 6
+    },
+    {
+      "name": "juju",
+      "price": "13.02",
+      "id": 7
+    },
+    {
+      "name": "teste",
+      "price": "155.03",
+      "id": 8
+    },
+    {
+      "name": "test2",
+      "price": "151.45",
+      "id": 9
     }
   ]
 }

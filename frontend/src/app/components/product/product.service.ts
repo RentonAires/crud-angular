@@ -27,5 +27,10 @@ export class ProductService {
   create(product: Product): Observable <Product>{
     return this.http.post<Product>(this.baseUrl,  product)
   }
-  
+
+
+  //metodo para ler produto do back-end e entregar na tela
+  read(): Observable<Product[]>{
+    return this.http.get<Product[]>(this.baseUrl)
+  }
 }
