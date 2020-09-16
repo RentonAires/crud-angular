@@ -3,12 +3,14 @@ table {
 }
 
 .edit {
-    margin-right: 10px;
+    margin-right: 20px;
 }
-
+/*classe edit > dentro tem uma tag I*/
 .edit > i {
     color: #d9cd26;
 }
+/*classe delete > dentro tem uma tag I*/
+
 .delete > i {
     color: #ee3355
 }

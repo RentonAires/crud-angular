@@ -33,4 +33,17 @@ export class ProductService {
   read(): Observable<Product[]>{
     return this.http.get<Product[]>(this.baseUrl)
   }
+
+  //metodo para ler o id do produto do back-end e entregar na tela 15/09/2020
+  readById(id: string):Observable<Product> {
+    const url = `${this.baseUrl}/${id}`// pegando so numero do id da url
+    return this.http.get<Product>(url)
+  }
+
+  //metodo para atualizar produto do back-end e entregar na tela
+  update(product: Product):Observable<Product>{
+    const url = `${this.baseUrl}/${product.id}`
+    return this.http.put<Product>(url, product)
+  }
+
 }

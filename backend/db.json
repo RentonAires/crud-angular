@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "name": "caneta",
+      "name": "caneta bic",
       "price": 5.9
     },
     {
@@ -26,7 +26,7 @@
       "id": 5
     },
     {
-      "name": "renato",
+      "name": "lala",
       "price": "300",
       "id": 6
     },
@@ -41,7 +41,7 @@
       "id": 8
     },
     {
-      "name": "test2",
+      "name": "juca",
       "price": "151.45",
       "id": 9
     }
