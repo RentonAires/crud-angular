@@ -17,8 +17,25 @@
     },
     {
       "name": "sabão",
-      "price": "20",
+      "price": 20.5,
       "id": 4
+    },
+    {
+      "name": "ahahhahh",
+      "price": "1000",
+      "id": 5
+    }
+  ],
+  "pessoa": [
+    {
+      "id": 6,
+      "nome": "renato",
+      "idade": 10
+    },
+    {
+      "nome": "ana",
+      "idade": "11",
+      "id": 7
     }
   ]
 }

@@ -8,6 +8,7 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
+import { PessoaCrudComponent } from './views/pessoa-crud/pessoa-crud.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: "products/delete/:id",
     component: ProductDeleteComponent
+  },
+  {
+    path: "pessoas",
+    component: PessoaCrudComponent
   }
 
 ];

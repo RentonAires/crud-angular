@@ -40,6 +40,7 @@ import localePt from '@angular/common/locales/pt'; //importando local e data
 import { registerLocaleData } from '@angular/common';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
+import { PessoaCrudComponent } from './views/pessoa-crud/pessoa-crud.component';
 
 registerLocaleData(localePt); //resgistro de local e data 
 
@@ -57,7 +58,8 @@ registerLocaleData(localePt); //resgistro de local e data
     ProductReadComponent,
     ProductRead2Component,
     ProductUpdateComponent,
-    ProductDeleteComponent
+    ProductDeleteComponent,
+    PessoaCrudComponent
   ],
   imports: [
     BrowserModule,
