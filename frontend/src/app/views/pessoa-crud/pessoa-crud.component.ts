@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-pessoa-crud',
   templateUrl: './pessoa-crud.component.html',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PessoaCrudComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router ) { }
 
   ngOnInit(): void {
+  }
+
+  navigateToPessoaCreate(): void {
+    console.log('navegando...');
+    this.router.navigate(['/pessoas/create'])
+    
   }
 
 }
