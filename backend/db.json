@@ -34,62 +34,16 @@
       "name": "mesa ",
       "price": "5000",
       "id": 7
-    }
-  ],
-  "pessoa": [
-    {
-      "id": 6,
-      "nome": "renato",
-      "idade": 10,
-      "altura": 1.9,
-      "cpf": 44477799,
-      "rg": 122233556655555
     },
     {
-      "nome": "ana",
-      "idade": "11",
-      "altura": 1.75,
-      "cpf": 44488899,
-      "rg": 1222335566888,
-      "id": 7
-    },
-    {
-      "nome": "ana",
-      "idade": "11",
+      "name": "aviao0000",
+      "price": "324470000",
       "id": 8
     },
     {
-      "nome": "ana",
-      "idade": "11",
-      "id": 9
-    },
-    {
-      "nome": "ana",
-      "idade": "11",
+      "name": "tigela",
+      "price": "1000",
       "id": 10
-    },
-    {
-      "nome": "ana",
-      "idade": "11",
-      "id": 11
-    },
-    {
-      "nome": "ana",
-      "idade": "11",
-      "id": 12
-    },
-    {
-      "nome": "ana",
-      "idade": "11",
-      "id": 13
-    },
-    {
-      "nome": "zeca",
-      "idade": "45",
-      "altura": "1.45",
-      "cpf": "4545666666",
-      "rg": "4545333333",
-      "id": 14
     }
   ]
 }

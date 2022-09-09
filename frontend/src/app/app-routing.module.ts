@@ -9,11 +9,6 @@ import { ProductCreateComponent } from './components/product/product-create/prod
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 
-import { PessoaCrudComponent } from './views/pessoa-crud/pessoa-crud.component';
-import { PessoaCreateComponent } from './components/pessoa/pessoa-create/pessoa-create.component';
-
-
-
 const routes: Routes = [
   {
     path: "",
@@ -34,20 +29,10 @@ const routes: Routes = [
   {
     path: "products/delete/:id",
     component: ProductDeleteComponent
-  },
-  {
-    path: "pessoas",
-    component: PessoaCrudComponent
-  },
-  {
-    path: "pessoas/create", 
-    component: PessoaCreateComponent
-  }
-
-];
-
+  }];
+  
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { } 
